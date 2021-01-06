@@ -13,8 +13,12 @@
 		07496D3E254A8F7A000BD310 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07496D3C254A8F7A000BD310 /* Main.storyboard */; };
 		07496D40254A8F7B000BD310 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07496D3F254A8F7B000BD310 /* Assets.xcassets */; };
 		07496D43254A8F7B000BD310 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07496D41254A8F7B000BD310 /* LaunchScreen.storyboard */; };
-		07496D4E254A8F7B000BD310 /* TestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07496D4D254A8F7B000BD310 /* TestAppTests.swift */; };
-		07496D59254A8F7B000BD310 /* TestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07496D58254A8F7B000BD310 /* TestAppUITests.swift */; };
+		07496D4E254A8F7B000BD310 /* FreakMusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07496D4D254A8F7B000BD310 /* FreakMusicTests.swift */; };
+		07496D59254A8F7B000BD310 /* FreakMusicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07496D58254A8F7B000BD310 /* FreakMusicUITests.swift */; };
+		07496D6A254AC84E000BD310 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07496D69254AC84E000BD310 /* DashboardVC.swift */; };
+		0784745B254EAAE100512528 /* TopCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0784745A254EAAE100512528 /* TopCVCell.swift */; };
+		07847464254ED43D00512528 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07847463254ED43D00512528 /* AVFoundation.framework */; };
+		07847466254ED91000512528 /* song1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07847465254ED91000512528 /* song1.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,11 +48,15 @@
 		07496D42254A8F7B000BD310 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07496D44254A8F7B000BD310 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07496D49254A8F7B000BD310 /* TestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		07496D4D254A8F7B000BD310 /* TestAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppTests.swift; sourceTree = "<group>"; };
+		07496D4D254A8F7B000BD310 /* FreakMusicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreakMusicTests.swift; sourceTree = "<group>"; };
 		07496D4F254A8F7B000BD310 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07496D54254A8F7B000BD310 /* TestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		07496D58254A8F7B000BD310 /* TestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppUITests.swift; sourceTree = "<group>"; };
+		07496D58254A8F7B000BD310 /* FreakMusicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreakMusicUITests.swift; sourceTree = "<group>"; };
 		07496D5A254A8F7B000BD310 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07496D69254AC84E000BD310 /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
+		0784745A254EAAE100512528 /* TopCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCVCell.swift; sourceTree = "<group>"; };
+		07847463254ED43D00512528 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		07847465254ED91000512528 /* song1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song1.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07847464254ED43D00512528 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,10 +88,11 @@
 		07496D2A254A8F7A000BD310 = {
 			isa = PBXGroup;
 			children = (
-				07496D35254A8F7A000BD310 /* TestApp */,
-				07496D4C254A8F7B000BD310 /* TestAppTests */,
-				07496D57254A8F7B000BD310 /* TestAppUITests */,
+				07496D35254A8F7A000BD310 /* FreakMusic */,
+				07496D4C254A8F7B000BD310 /* FreakMusicTests */,
+				07496D57254A8F7B000BD310 /* FreakMusicUITests */,
 				07496D34254A8F7A000BD310 /* Products */,
+				07847462254ED43D00512528 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,36 +106,47 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		07496D35254A8F7A000BD310 /* TestApp */ = {
+		07496D35254A8F7A000BD310 /* FreakMusic */ = {
 			isa = PBXGroup;
 			children = (
 				07496D36254A8F7A000BD310 /* AppDelegate.swift */,
 				07496D38254A8F7A000BD310 /* SceneDelegate.swift */,
 				07496D3A254A8F7A000BD310 /* ViewController.swift */,
+				07496D69254AC84E000BD310 /* DashboardVC.swift */,
+				0784745A254EAAE100512528 /* TopCVCell.swift */,
 				07496D3C254A8F7A000BD310 /* Main.storyboard */,
 				07496D3F254A8F7B000BD310 /* Assets.xcassets */,
 				07496D41254A8F7B000BD310 /* LaunchScreen.storyboard */,
 				07496D44254A8F7B000BD310 /* Info.plist */,
+				07847465254ED91000512528 /* song1.mp3 */,
 			);
-			path = TestApp;
+			path = FreakMusic;
 			sourceTree = "<group>";
 		};
-		07496D4C254A8F7B000BD310 /* TestAppTests */ = {
+		07496D4C254A8F7B000BD310 /* FreakMusicTests */ = {
 			isa = PBXGroup;
 			children = (
-				07496D4D254A8F7B000BD310 /* TestAppTests.swift */,
+				07496D4D254A8F7B000BD310 /* FreakMusicTests.swift */,
 				07496D4F254A8F7B000BD310 /* Info.plist */,
 			);
-			path = TestAppTests;
+			path = FreakMusicTests;
 			sourceTree = "<group>";
 		};
-		07496D57254A8F7B000BD310 /* TestAppUITests */ = {
+		07496D57254A8F7B000BD310 /* FreakMusicUITests */ = {
 			isa = PBXGroup;
 			children = (
-				07496D58254A8F7B000BD310 /* TestAppUITests.swift */,
+				07496D58254A8F7B000BD310 /* FreakMusicUITests.swift */,
 				07496D5A254A8F7B000BD310 /* Info.plist */,
 			);
-			path = TestAppUITests;
+			path = FreakMusicUITests;
+			sourceTree = "<group>";
+		};
+		07847462254ED43D00512528 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07847463254ED43D00512528 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,7 +227,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 07496D2E254A8F7A000BD310 /* Build configuration list for PBXProject "TestApp" */;
+			buildConfigurationList = 07496D2E254A8F7A000BD310 /* Build configuration list for PBXProject "FreakMusic" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -234,6 +255,7 @@
 				07496D43254A8F7B000BD310 /* LaunchScreen.storyboard in Resources */,
 				07496D40254A8F7B000BD310 /* Assets.xcassets in Resources */,
 				07496D3E254A8F7A000BD310 /* Main.storyboard in Resources */,
+				07847466254ED91000512528 /* song1.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +281,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				07496D3B254A8F7A000BD310 /* ViewController.swift in Sources */,
+				07496D6A254AC84E000BD310 /* DashboardVC.swift in Sources */,
 				07496D37254A8F7A000BD310 /* AppDelegate.swift in Sources */,
 				07496D39254A8F7A000BD310 /* SceneDelegate.swift in Sources */,
+				0784745B254EAAE100512528 /* TopCVCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07496D4E254A8F7B000BD310 /* TestAppTests.swift in Sources */,
+				07496D4E254A8F7B000BD310 /* FreakMusicTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07496D59254A8F7B000BD310 /* TestAppUITests.swift in Sources */,
+				07496D59254A8F7B000BD310 /* FreakMusicUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,12 +462,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UXY7GXJWTF;
-				INFOPLIST_FILE = TestApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FreakMusic/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ASTHA.TestApp;
+				PRODUCT_BUNDLE_IDENTIFIER = ASTHA.FreakMusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -457,12 +481,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UXY7GXJWTF;
-				INFOPLIST_FILE = TestApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FreakMusic/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ASTHA.TestApp;
+				PRODUCT_BUNDLE_IDENTIFIER = ASTHA.FreakMusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -556,7 +580,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		07496D2E254A8F7A000BD310 /* Build configuration list for PBXProject "TestApp" */ = {
+		07496D2E254A8F7A000BD310 /* Build configuration list for PBXProject "FreakMusic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				07496D5B254A8F7B000BD310 /* Debug */,
